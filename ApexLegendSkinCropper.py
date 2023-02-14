@@ -1,7 +1,109 @@
 import os
 import PIL
 
-# Take user input for folder path
+legendW = 546
+legendH = 858
+
+#C:\Users\samca\OneDrive\Desktop\Test Folder
+
+# Take user input for folder path and sets as the working directory.
+directory = os.fsencode(input("Type the path of the image folder to be cropped: "))
+
+# Iterates through each file in the folder.
+for file in os.listdir(directory):
+    filename = os.fsdecode(file)
+
+    # Ash
+    if filename.endswith("Ash.png"):
+        continue
+
+    # Bangalore
+    if filename.endswith("Bangalore.png"):
+        continue
+
+    # Bloodhound
+    if filename.endswith("Bloodhound.png"):
+        continue
+    
+    # Catalyst
+    if filename.endswith("Catalyst.png"):
+        continue
+
+    # Caustic
+    if filename.endswith("Caustic.png"):
+        continue
+
+    # Crypto
+    if filename.endswith("Crypto.png"):
+        continue
+
+    # Fuse
+    if filename.endswith("Fuse.png"):
+        continue
+
+    # Gibraltar
+    if filename.endswith("Gibraltar.png"):
+        continue
+
+    # Horizon
+    if filename.endswith("Horizon.png"):
+        continue
+
+    # Lifeline
+    if filename.endswith("Lifeline.png"):
+        continue
+
+    # Loba
+    if filename.endswith("Loba.png"):
+        continue
+
+    # Mad Maggie
+    if filename.endswith("Maggie.png"):
+        continue
+
+    # Mirage
+    if filename.endswith("Mirage.png"):
+        continue
+
+    # Newcastle
+    if filename.endswith("Newcastle.png"):
+        continue
+
+    # Octane
+    if filename.endswith("Octane.png"):
+        continue
+
+    # Pathfinder
+    if filename.endswith("Pathfinder.png"):
+        continue
+
+    # Rampart
+    if filename.endswith("Rampart.png"):
+        continue
+
+    # Revenant
+    if filename.endswith("Revenant.png"):
+        continue
+
+    # Seer
+    if filename.endswith("Seer.png"):
+        continue
+
+    # Valkyrie
+    if filename.endswith("Valkyrie.png"):
+        continue
+
+    # Vantage
+    if filename.endswith("Vantage.png"):
+        continue
+
+    # Wattson
+    if filename.endswith("Wattson.png"):
+        continue
+
+    # Wraith
+    if filename.endswith("Wraith.png"):
+        continue
 
 # Go to folder path
 
