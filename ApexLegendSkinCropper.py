@@ -1,5 +1,5 @@
 import os
-import PIL
+from PIL import Image
 
 legendW = 546
 legendH = 858
@@ -8,10 +8,12 @@ legendH = 858
 
 # Take user input for folder path and sets as the working directory.
 directory = os.fsencode(input("Type the path of the image folder to be cropped: "))
+directory_name = str(directory)[2:len(str(directory)) - 1]
 
 # Iterates through each file in the folder.
 for file in os.listdir(directory):
-    filename = os.fsdecode(file)
+    filename = directory_name + "\\" + str(os.fsdecode(file))
+    img = Image.open(filename)
 
     # Ash
     if filename.endswith("Ash.png"):
@@ -19,7 +21,9 @@ for file in os.listdir(directory):
 
     # Bangalore
     if filename.endswith("Bangalore.png"):
-        continue
+        img2 = img.crop((931, 204, 931 + legendW, 204 + legendH))
+        img2.save(filename)
+        print("Cropped " + filename)
 
     # Bloodhound
     if filename.endswith("Bloodhound.png"):
