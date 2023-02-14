@@ -12,6 +12,11 @@ directory_name = str(directory)[2:len(str(directory)) - 1]
 # Iterates through each file in the folder.
 for file in os.listdir(directory):
     filename = directory_name + "\\" + str(os.fsdecode(file))
+
+    # Skips non-PNG files
+    if not filename.endswith(".png"):
+        continue
+
     img = Image.open(filename)
 
     # Ash
@@ -128,6 +133,10 @@ for file in os.listdir(directory):
     elif filename.endswith("Wraith.png"):
         img2 = img.crop((930, 220, 930 + legendW, 220 + legendH))
         img2.save(filename)
+
+    # All other images
+    else:
+        continue
 
     image_count = image_count + 1
     print(str(image_count) + " | Cropped " + filename)
