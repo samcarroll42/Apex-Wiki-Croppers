@@ -3,8 +3,7 @@ from PIL import Image
 
 legendW = 546
 legendH = 858
-
-#C:\Users\samca\OneDrive\Desktop\Test Folder
+image_count = 0
 
 # Take user input for folder path and sets as the working directory.
 directory = os.fsencode(input("Type the path of the image folder to be cropped: "))
@@ -17,107 +16,121 @@ for file in os.listdir(directory):
 
     # Ash
     if filename.endswith("Ash.png"):
-        continue
+        img2 = img.crop((930, 220, 930 + legendW, 220 + legendH))
+        img2.save(filename)
 
     # Bangalore
-    if filename.endswith("Bangalore.png"):
+    elif filename.endswith("Bangalore.png"):
         img2 = img.crop((931, 204, 931 + legendW, 204 + legendH))
         img2.save(filename)
-        print("Cropped " + filename)
 
     # Bloodhound
-    if filename.endswith("Bloodhound.png"):
-        continue
+    elif filename.endswith("Bloodhound.png"):
+        img2 = img.crop((930, 200, 930 + legendW, 200 + legendH))
+        img2.save(filename)
     
     # Catalyst
-    if filename.endswith("Catalyst.png"):
-        continue
+    elif filename.endswith("Catalyst.png"):
+        img2 = img.crop((930, 210, 930 + legendW, 210 + legendH))
+        img2.save(filename)
 
     # Caustic
-    if filename.endswith("Caustic.png"):
-        continue
+    elif filename.endswith("Caustic.png"):
+        img2 = img.crop((920, 180, 920 + legendW, 180 + legendH))
+        img2.save(filename)
 
     # Crypto
-    if filename.endswith("Crypto.png"):
-        continue
+    elif filename.endswith("Crypto.png"):
+        img2 = img.crop((930, 220, 930 + legendW, 220 + legendH))
+        img2.save(filename)
 
     # Fuse
-    if filename.endswith("Fuse.png"):
-        continue
+    elif filename.endswith("Fuse.png"):
+        img2 = img.crop((933, 200, 933 + legendW, 200 + legendH))
+        img2.save(filename)
 
     # Gibraltar
-    if filename.endswith("Gibraltar.png"):
-        continue
+    elif filename.endswith("Gibraltar.png"):
+        img2 = img.crop((930, 210, 940 + legendW, 210 + legendH))
+        img2.save(filename)
 
     # Horizon
-    if filename.endswith("Horizon.png"):
-        continue
+    elif filename.endswith("Horizon.png"):
+        img2 = img.crop((933, 200, 933 + legendW, 200 + legendH))
+        img2.save(filename)
 
     # Lifeline
-    if filename.endswith("Lifeline.png"):
-        continue
+    elif filename.endswith("Lifeline.png"):
+        img2 = img.crop((934, 196, 934 + legendW, 196 + legendH))
+        img2.save(filename)
 
     # Loba
-    if filename.endswith("Loba.png"):
-        continue
+    elif filename.endswith("Loba.png"):
+        img2 = img.crop((930, 180, 930 + legendW, 180 + legendH))
+        img2.save(filename)
 
     # Mad Maggie
-    if filename.endswith("Maggie.png"):
-        continue
+    elif filename.endswith("Maggie.png"):
+        img2 = img.crop((931, 204, 931 + legendW, 204 + legendH))
+        img2.save(filename)
 
     # Mirage
-    if filename.endswith("Mirage.png"):
-        continue
+    elif filename.endswith("Mirage.png"):
+        img2 = img.crop((938, 203, 938 + legendW, 203 + legendH))
+        img2.save(filename)
 
     # Newcastle
-    if filename.endswith("Newcastle.png"):
-        continue
+    elif filename.endswith("Newcastle.png"):
+        img2 = img.crop((920, 176, 920 + legendW, 176 + legendH))
+        img2.save(filename)
 
     # Octane
-    if filename.endswith("Octane.png"):
-        continue
+    elif filename.endswith("Octane.png"):
+        img2 = img.crop((934, 200, 934 + legendW, 200 + legendH))
+        img2.save(filename)
 
     # Pathfinder
-    if filename.endswith("Pathfinder.png"):
-        continue
+    elif filename.endswith("Pathfinder.png"):
+        img2 = img.crop((933, 200, 933 + legendW, 200 + legendH))
+        img2.save(filename)
 
     # Rampart
-    if filename.endswith("Rampart.png"):
-        continue
+    elif filename.endswith("Rampart.png"):
+        img2 = img.crop((920, 180, 920 + legendW, 180 + legendH))
+        img2.save(filename)
 
     # Revenant
-    if filename.endswith("Revenant.png"):
-        continue
+    elif filename.endswith("Revenant.png"):
+        img2 = img.crop((930, 180, 930 + legendW, 180 + legendH))
+        img2.save(filename)
 
     # Seer
-    if filename.endswith("Seer.png"):
-        continue
+    elif filename.endswith("Seer.png"):
+        img2 = img.crop((933, 200, 933 + legendW, 200 + legendH))
+        img2.save(filename)
 
     # Valkyrie
-    if filename.endswith("Valkyrie.png"):
-        continue
+    elif filename.endswith("Valkyrie.png"):
+        img2 = img.crop((920, 180, 920 + legendW, 180 + legendH))
+        img2.save(filename)
 
     # Vantage
-    if filename.endswith("Vantage.png"):
-        continue
+    elif filename.endswith("Vantage.png"):
+        img2 = img.crop((915, 185, 915 + legendW, 185 + legendH))
+        img2.save(filename)
 
     # Wattson
-    if filename.endswith("Wattson.png"):
-        continue
+    elif filename.endswith("Wattson.png"):
+        img2 = img.crop((930, 220, 930 + legendW, 220 + legendH))
+        img2.save(filename)
 
     # Wraith
-    if filename.endswith("Wraith.png"):
-        continue
+    elif filename.endswith("Wraith.png"):
+        img2 = img.crop((930, 220, 930 + legendW, 220 + legendH))
+        img2.save(filename)
 
-# Go to folder path
+    image_count = image_count + 1
+    print(str(image_count) + " | Cropped " + filename)
 
-# Iterate over files
-    # For file in folder:
-        # Check which Legend skin belongs to (ex. endswith(Bangalore.png))
-
-        # Use Pillow to crop image to specified coordinates
-
-        # If file is for weapon / charm / not applicable:
-            # Skip/continue
-
+print("Cropped " + str(image_count) + " images.")
     
