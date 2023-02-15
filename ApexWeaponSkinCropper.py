@@ -19,120 +19,68 @@ for file in os.listdir(directory):
 
     img = Image.open(filename)
 
-    # Ash
-    if filename.endswith("Ash.png"):
+    # 30-30 Repeater
+    if filename.endswith("30-30 Repeater.png"):
         img2 = img.crop((930, 220, 930 + legendW, 220 + legendH))
         img2.save(filename)
 
-    # Bangalore
-    elif filename.endswith("Bangalore.png"):
-        img2 = img.crop((931, 204, 931 + legendW, 204 + legendH))
-        img2.save(filename)
+    # Alternator SMG
+    if filename.endswith("Alternator SMG.png"):
+        continue
 
-    # Bloodhound
-    elif filename.endswith("Bloodhound.png"):
-        img2 = img.crop((930, 200, 930 + legendW, 200 + legendH))
-        img2.save(filename)
-    
-    # Catalyst
-    elif filename.endswith("Catalyst.png"):
-        img2 = img.crop((930, 210, 930 + legendW, 210 + legendH))
-        img2.save(filename)
+    # Bocek Compound Bow
+    if filename.endswith("Bocek.png"):
+        continue
 
-    # Caustic
-    elif filename.endswith("Caustic.png"):
-        img2 = img.crop((920, 180, 920 + legendW, 180 + legendH))
-        img2.save(filename)
+    # C.A.R. SMG
+    if filename.endswith("CAR.png"):
+        continue
 
-    # Crypto
-    elif filename.endswith("Crypto.png"):
-        img2 = img.crop((930, 220, 930 + legendW, 220 + legendH))
-        img2.save(filename)
+    # Charge Rifle
+    if filename.endswith("Charge Rifle.png"):
+        continue
 
-    # Fuse
-    elif filename.endswith("Fuse.png"):
-        img2 = img.crop((933, 200, 933 + legendW, 200 + legendH))
-        img2.save(filename)
+    # Devotion LMG
+    if filename.endswith("Devotion.png"):
+        continue
 
-    # Gibraltar
-    elif filename.endswith("Gibraltar.png"):
-        img2 = img.crop((930, 210, 940 + legendW, 210 + legendH))
-        img2.save(filename)
+    # Hemlok Burst AR
+    if filename.endswith("Hemlok.png"):
+        continue
 
-    # Horizon
-    elif filename.endswith("Horizon.png"):
-        img2 = img.crop((933, 200, 933 + legendW, 200 + legendH))
-        img2.save(filename)
+    # L-STAR EMG
+    if filename.endswith("L-STAR.png"):
+        continue
 
-    # Lifeline
-    elif filename.endswith("Lifeline.png"):
-        img2 = img.crop((934, 196, 934 + legendW, 196 + legendH))
-        img2.save(filename)
+    # Prowler Burst PDW
+    if filename.endswith("Prowler.png"):
+        continue
 
-    # Loba
-    elif filename.endswith("Loba.png"):
-        img2 = img.crop((930, 180, 930 + legendW, 180 + legendH))
-        img2.save(filename)
+    # Rampage LMG
+    if filename.endswith("Rampage.png"):
+        continue
 
-    # Mad Maggie
-    elif filename.endswith("Maggie.png"):
-        img2 = img.crop((931, 204, 931 + legendW, 204 + legendH))
-        img2.save(filename)
+    # RE-45 Auto
+    if filename.endswith("RE-45.png"):
+        continue
 
-    # Mirage
-    elif filename.endswith("Mirage.png"):
-        img2 = img.crop((938, 203, 938 + legendW, 203 + legendH))
-        img2.save(filename)
+    # R-99 SMG
+    if filename.endswith("R-99.png"):
+        continue
 
-    # Newcastle
-    elif filename.endswith("Newcastle.png"):
-        img2 = img.crop((920, 176, 920 + legendW, 176 + legendH))
-        img2.save(filename)
+    # M600 Spitfire
+    if filename.endswith("Spitfire.png"):
+        continue
 
-    # Octane
-    elif filename.endswith("Octane.png"):
-        img2 = img.crop((934, 200, 934 + legendW, 200 + legendH))
-        img2.save(filename)
+    # Volt SMG
+    if filename.endswith("Volt.png"):
+        continue
 
-    # Pathfinder
-    elif filename.endswith("Pathfinder.png"):
-        img2 = img.crop((933, 200, 933 + legendW, 200 + legendH))
-        img2.save(filename)
-
-    # Rampart
-    elif filename.endswith("Rampart.png"):
-        img2 = img.crop((920, 180, 920 + legendW, 180 + legendH))
-        img2.save(filename)
-
-    # Revenant
-    elif filename.endswith("Revenant.png"):
-        img2 = img.crop((930, 180, 930 + legendW, 180 + legendH))
-        img2.save(filename)
-
-    # Seer
-    elif filename.endswith("Seer.png"):
-        img2 = img.crop((933, 200, 933 + legendW, 200 + legendH))
-        img2.save(filename)
-
-    # Valkyrie
-    elif filename.endswith("Valkyrie.png"):
-        img2 = img.crop((920, 180, 920 + legendW, 180 + legendH))
-        img2.save(filename)
-
-    # Vantage
-    elif filename.endswith("Vantage.png"):
-        img2 = img.crop((915, 185, 915 + legendW, 185 + legendH))
-        img2.save(filename)
-
-    # Wattson
-    elif filename.endswith("Wattson.png"):
-        img2 = img.crop((930, 220, 930 + legendW, 220 + legendH))
-        img2.save(filename)
-
-    # Wraith
-    elif filename.endswith("Wraith.png"):
-        img2 = img.crop((930, 220, 930 + legendW, 220 + legendH))
-        img2.save(filename)
+    # All other weapons
+    # HAVOC Rifle, VK-47 Flatline, R-301 Carbine, Nemesis Burst AR, G7 Scout, Triple Take, Longbow DMR, Kraber .50-Cal Sniper,
+    # Sentinel ESR, EVA-8 Auto, Mastiff Shotgun, Mozambique Shotgun, Peacekeeper, P2020, Wingman
+    if filename.endswith("Havoc.png") or filename.endswith("Flatline.png") or filename.endswith("R-301.png") or filename.endswith("Nemesis.png") or filename.endswith("G7 Scout.png") or filename.endswith("Triple Take.png") or filename.endswith("Longbow.png") or filename.endswith("Kraber.png") or filename.endswith("Sentinel.png") or filename.endswith("EVA-8.png") or filename.endswith("Mastiff.png") or filename.endswith("Mozambique.png") or filename.endswith("Peacekeeper.png") or filename.endswith("P2020.png") or filename.endswith("Wingman.png"):
+        continue
 
     # All other images
     else:
