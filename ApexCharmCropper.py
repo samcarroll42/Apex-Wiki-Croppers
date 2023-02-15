@@ -17,7 +17,8 @@ directory_name = str(directory)[2:len(str(directory)) - 1]
 
 # Iterates through each file in the folder.
 for file in os.listdir(directory):
-    filename = directory_name + "\\" + str(os.fsdecode(file))
+    relative_filename = str(os.fsdecode(file))
+    filename = directory_name + "\\" + relative_filename
 
     # Skips non-PNG files
     if not filename.endswith(".png"):
@@ -26,7 +27,7 @@ for file in os.listdir(directory):
     img = Image.open(filename)
 
     # Charms
-    if filename.startswith("Charms "):
+    if relative_filename.startswith("Charms "):
         img2 = img.crop((700, 300, 700 + 800, 300 + 600))
         img2.save(filename)
 
