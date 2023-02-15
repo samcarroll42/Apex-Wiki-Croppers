@@ -1,3 +1,11 @@
+"""
+DeleteJFIF.py
+
+Quickly deletes JFIF files from a folder.
+
+Author - Sam Carroll
+2/14/2023
+"""
 import os
 from PIL import Image
 

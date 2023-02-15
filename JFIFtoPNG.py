@@ -13,7 +13,7 @@ image_count = 0
 filetype_tuple = (".jpg", ".jpeg", ".jfif")
 
 # Take user input for folder path and sets as the working directory.
-directory = os.fsencode(input("Type the path of the image folder to be cropped: "))
+directory = os.fsencode(input("Type the path of the image folder to be processed: "))
 directory_name = str(directory)[2:len(str(directory)) - 1]
 
 # Iterates through each file in the folder.

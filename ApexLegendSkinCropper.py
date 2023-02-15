@@ -1,3 +1,11 @@
+"""
+ApexLegendSkinCropper.py
+
+Crops legend skins from Apex Legends for use on the Apex Legends Wiki.
+
+Author - Sam Carroll
+2/14/2023
+"""
 import os
 from PIL import Image
 
