@@ -1,3 +1,11 @@
+"""
+JFIFtoPNG.py
+
+Converts JFIF files to PNG format.
+
+Author - Sam Carroll
+2/14/2023
+"""
 import os
 from PIL import Image
 
