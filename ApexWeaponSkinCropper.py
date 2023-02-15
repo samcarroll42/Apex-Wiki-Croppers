@@ -2,6 +2,8 @@ import os
 from PIL import Image
 
 image_count = 0
+weapon_tuple = ("Havoc.png", "Flatline.png", "R-301.png", "Nemesis.png", "G7 Scout.png", "Triple Take.png", "Longbow.png", "Kraber.png", "Sentinel.png", "EVA-8.png", "Mastiff.png", 
+"Mozambique.png", "Peacekeeper.png", "P2020.png", "Wingman.png")
 
 # Take user input for folder path and sets as the working directory.
 directory = os.fsencode(input("Type the path of the image folder to be cropped: "))
@@ -90,7 +92,7 @@ for file in os.listdir(directory):
     # All other weapons
     # HAVOC Rifle, VK-47 Flatline, R-301 Carbine, Nemesis Burst AR, G7 Scout, Triple Take, Longbow DMR, Kraber .50-Cal Sniper,
     # Sentinel ESR, EVA-8 Auto, Mastiff Shotgun, Mozambique Shotgun, Peacekeeper, P2020, Wingman
-    if filename.endswith("Havoc.png") or filename.endswith("Flatline.png") or filename.endswith("R-301.png") or filename.endswith("Nemesis.png") or filename.endswith("G7 Scout.png") or filename.endswith("Triple Take.png") or filename.endswith("Longbow.png") or filename.endswith("Kraber.png") or filename.endswith("Sentinel.png") or filename.endswith("EVA-8.png") or filename.endswith("Mastiff.png") or filename.endswith("Mozambique.png") or filename.endswith("Peacekeeper.png") or filename.endswith("P2020.png") or filename.endswith("Wingman.png"):
+    if filename.endswith(weapon_tuple):  
         img2 = img.crop((640, 400, 640 + 1200, 400 + 450))
         img2.save(filename)
 
