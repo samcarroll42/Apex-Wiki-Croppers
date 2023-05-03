@@ -1,10 +1,11 @@
 """
 DeleteJFIF.py
 
-Quickly deletes JFIF files from a folder.
+Quickly deletes JFIF or JPEG files from a folder.
 
 Author - Sam Carroll
-2/14/2023
+Written - 2/14/2023
+Last updated - 5/3/2023
 """
 import os
 from PIL import Image
@@ -19,7 +20,7 @@ directory_name = str(directory)[2:len(str(directory)) - 1]
 for file in os.listdir(directory):
     filename = directory_name + "\\" + str(os.fsdecode(file))
 
-    if filename.endswith(".jfif"):
+    if filename.endswith(".jfif") or filename.endswith(".jpg"):
         os.remove(filename)
     else:
         continue
