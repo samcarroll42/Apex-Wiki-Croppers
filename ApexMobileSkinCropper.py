@@ -3,6 +3,8 @@ ApexMobileSkinCropper.py
 
 Crops legend skins from Apex Legends Mobile for use on the Apex Legends Wiki.
 
+NOTICE: As Apex Legends Mobile was shut down on 5/1/2023, this script has been deprecated.
+
 Author - Sam Carroll
 2/14/2023
 """
