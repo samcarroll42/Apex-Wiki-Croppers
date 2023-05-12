@@ -4,7 +4,9 @@ ApexLegendSkinCropper.py
 Crops legend skins from Apex Legends for use on the Apex Legends Wiki.
 
 Author - Sam Carroll
-2/14/2023
+
+Written - 2/14/2023
+Last updated - 5/12/2023
 """
 import os
 from PIL import Image
@@ -30,6 +32,11 @@ for file in os.listdir(directory):
     # Ash
     if filename.endswith("Ash.png"):
         img2 = img.crop((930, 220, 930 + legendW, 220 + legendH))
+        img2.save(filename)
+
+    # Ballistic
+    if filename.endswith("Ballistic.png"):
+        img2 = img.crop((921, 174, 921 + legendW, 174 + legendH))
         img2.save(filename)
 
     # Bangalore
