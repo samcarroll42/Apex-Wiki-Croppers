@@ -13,7 +13,7 @@ from PIL import Image
 image_count = 0
 legend_tuple = ("Bangalore Pose", "Revenant Pose", "Fuse Pose", "Maggie Pose", "Ash Pose", "Pathfinder Pose", "Wraith Pose", "Mirage Pose", "Octane Pose", 
 "Horizon Pose", "Valkyrie Pose", "Bloodhound Pose", "Crypto Pose", "Seer Pose", "Vantage Pose", "Gibraltar Pose", "Lifeline Pose", "Loba Pose", "Newcastle Pose", 
-"Caustic Pose", "Wattson Pose", "Rampart Pose", "Catalyst Pose")
+"Caustic Pose", "Wattson Pose", "Rampart Pose", "Catalyst Pose", "Ballistic Pose")
 
 # Take user input for folder path and sets as the working directory.
 directory = os.fsencode(input("Type the path of the image folder to be cropped: "))
